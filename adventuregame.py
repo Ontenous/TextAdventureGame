@@ -68,5 +68,28 @@ while True:
             begins to form rock and lightning. Her only hope of a cure is  
             a Black lotus, which she so desperately hopes to find. 
             """)
+    if dnd_class == "Info Pollux":
+        print(f"""
+              Born in the Nelithralvi Desert, Pollux has traveled hundreds
+              of miles across Quenya for his pilgrimage. Deep within the desert
+              was his village, a small underground place to hide from the 
+              violent magnetic storm above, where the dead do not remain
+              docile. Pollux lost his twin brother to these creatures, deemed
+              'The Lonely' and all he has to remember him is a Black Lotus flower.
+              He is a rogue, and is used to having to slink around the desert
+              and remain unseen. Now he goes to Mount Orion, to honor his brother,
+              and to visit more of the world.
+              """)
+    if dnd_class == "Info Erza":
+        print(f"""
+              A siren, born from the sea foam, lived the average life. She sung
+              and lured in sailors, but eventually over the endless blue horizon, 
+              she saw a dryad, named Ambrosia, and they promised each other their
+              lives. Erza eventually became a pirate for a notable crew, being the 
+              bard and cook of the ship. Her lover was unfortunately killed in a 
+              battle. She now travels on the pilgrimage to Mount Orion, so that she
+              may see more of the world, hear and tell more stories, and make
+              some new friends. 
+              """)
 
 print("took you long enough")
