@@ -98,36 +98,53 @@ print()
 print()
 
 opening_dialogue = {
-    "Kinsuna":"Amidst the large crowds and bellowing laughter, the stench of grog, smoke,\
-            and sweat blasts you as you head up the stairs. People cheer and sing along \
-            with the bard currently on stage, tankard's slosh around mead all over the floor, \
-            and the bard’s bright colors and loose fabric grab your attention. Somewhere \
-            in the seating area is a slightly peculiarly dark corner you notice, where a… \
-            dragonborn(?) has small piles of dust scattered around the table, looking smugly \
-            at the person across. He taps his lanterns onto the pile closest to the man, \
-            sparkling with bright colors. The man falls out of his chair, as the man bellows a hearty laugh",
-    "Xuri":"A small drow woman sits upon a barrel in the underbelly of the ship. Her once \
-            finely crafted and embellished with silvers and gems mildly scraped, torn from \
-            various adventures. You sit amongst the mead, needing a break from the constant \
-            crowds of people, their pungent odors being a new sensation to adapt to. \
-            Deciding you have been down here for quite the while, as well as a sore butt,\
-            you close your book and stand up.",
-    "Mirajane":"Chilling mists breeze across your face, overcast clouds block the sun \
-                and fresh rain coats the slick deck. A few ship members yell and carry out their \
-                daily duties, though you also notice 2 of the passengers of the ship staring off of \
-                the boat. One’s wispy body melting into the sky stares off at the shore, the other \
-                dressed in thinner clothes wrapped around on all sides gazes across the sea, the \
-                Sea Dragon’s Scales peaking over the crashing waves.",
-    "Pollux":"Chilling mists breeze across your face, overcast clouds block the sun \
-                and fresh rain coats the slick deck. A few ship members yell and carry out their \
-                daily duties, though you also notice 2 of the passengers of the ship staring off of \
-                the boat. One’s wispy body melting into the sky stares off at the shore, the other \
-                dressed in thinner clothes wrapped around on all sides gazes across the sea, the \
-                Sea Dragon’s Scales peaking over the crashing waves.",
-    "Erza":"Amidst the large crowds and bellowing laughter, the stench of grog, smoke,\
-            and sweat blasts you as you head up the stairs. People cheer and sing along \
-            with the bard currently on stage, tankard's slosh around mead all over the floor, \
-            and the bard’s bright colors and loose fabric grab your attention."
+    "Kinsuna":"""Amidst the large crowds and bellowing laughter, the stench of grog, smoke,
+            and sweat blasts you as you head up the stairs. People cheer and sing along 
+            with the bard currently on stage, tankard's slosh around mead all over the floor, 
+            and the bard’s bright colors and loose fabric grab your attention. Somewhere 
+            in the seating area is a slightly peculiarly dark corner you notice, where a… 
+            dragonborn(?) has small piles of dust scattered around the table, looking smugly 
+            at the person across. He taps his lanterns onto the pile closest to the man, 
+            sparkling with bright colors. The man falls out of his chair, as the man bellows a hearty laugh""",
+    "Xuri":"""A small drow woman sits upon a barrel in the underbelly of the ship. Her once 
+            finely crafted and embellished with silvers and gems mildly scraped, torn from 
+            various adventures. You sit amongst the mead, needing a break from the constant 
+            crowds of people, their pungent odors being a new sensation to adapt to. 
+            Deciding you have been down here for quite the while, as well as a sore butt,
+            you close your book and stand up.""",
+    "Mirajane":"""Chilling mists breeze across your face, overcast clouds block the sun 
+                and fresh rain coats the slick deck. A few ship members yell and carry out their 
+                daily duties, though you also notice 2 of the passengers of the ship staring off of 
+                the boat. One’s wispy body melting into the sky stares off at the shore, the other 
+                dressed in thinner clothes wrapped around on all sides gazes across the sea, the 
+                Sea Dragon’s Scales peaking over the crashing waves.""",
+    "Pollux":"""Chilling mists breeze across your face, overcast clouds block the sun 
+                and fresh rain coats the slick deck. A few ship members yell and carry out their 
+                daily duties, though you also notice 2 of the passengers of the ship staring off of 
+                the boat. One’s wispy body melting into the sky stares off at the shore, the other 
+                dressed in thinner clothes wrapped around on all sides gazes across the sea, the 
+                Sea Dragon’s Scales peaking over the crashing waves.""",
+    "Erza":"""Amidst the large crowds and bellowing laughter, the stench of grog, smoke,
+            and sweat blasts you as you head up the stairs. People cheer and sing along 
+            with the bard currently on stage, tankard's slosh around mead all over the floor, 
+            and the bard’s bright colors and loose fabric grab your attention."""
 
 }
 
+if dnd_class == "Xuri" or dnd_class == "Xuri Volk":
+    print(opening_dialogue["Xuri"])
+if dnd_class == "Kinsuna":
+    print(opening_dialogue["Kinsuna"])
+if dnd_class == "Mirajane":
+    print(opening_dialogue["Mirajane"])
+if dnd_class == "Pollux":
+    print(opening_dialogue["Pollux"])
+if dnd_class == "Erza":
+    print(opening_dialogue["Erza"])
+
+while True:
+    op_loc = input("""
+    Upon this ship lies 3 different decks, the Underbelly, The Tween Deck,
+    and above deck. Where would you like to go?
+    """)
+    op_loc = op_loc.title()
