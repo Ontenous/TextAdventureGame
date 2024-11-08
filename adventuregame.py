@@ -117,6 +117,17 @@ opening_dialogue = {
                 daily duties, though you also notice 2 of the passengers of the ship staring off of \
                 the boat. One’s wispy body melting into the sky stares off at the shore, the other \
                 dressed in thinner clothes wrapped around on all sides gazes across the sea, the \
-                Sea Dragon’s Scales peaking over the crashing waves."
+                Sea Dragon’s Scales peaking over the crashing waves.",
+    "Pollux":"Chilling mists breeze across your face, overcast clouds block the sun \
+                and fresh rain coats the slick deck. A few ship members yell and carry out their \
+                daily duties, though you also notice 2 of the passengers of the ship staring off of \
+                the boat. One’s wispy body melting into the sky stares off at the shore, the other \
+                dressed in thinner clothes wrapped around on all sides gazes across the sea, the \
+                Sea Dragon’s Scales peaking over the crashing waves.",
+    "Erza":"Amidst the large crowds and bellowing laughter, the stench of grog, smoke,\
+            and sweat blasts you as you head up the stairs. People cheer and sing along \
+            with the bard currently on stage, tankard's slosh around mead all over the floor, \
+            and the bard’s bright colors and loose fabric grab your attention."
 
 }
+
