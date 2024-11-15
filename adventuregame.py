@@ -147,6 +147,9 @@ if dnd_class == "Pollux":
 if dnd_class == "Erza":
     print(opening_dialogue["Erza"])
 
+golden_ram = 0
+
+
 while True:
     op_loc = input("""
 Upon this ship lies 3 different decks, the Underbelly, The Tween Deck,
@@ -158,6 +161,7 @@ and above deck. Where would you like to go?
 Scattered barrels, occasionally leaking mead are strewn about,
 as well as various spices, and ship supplies.
         """)
+        golden_ram = golden_ram+1
         if dnd_class == "Kinsuna" or dnd_class == "Pollux" or dnd_class == "Mirajane" or dnd_class == "Erza":
             print("""
 A small drow woman sits upon a barrel in the underbelly of the ship. Her once 
@@ -200,5 +204,39 @@ various adventures.
         the seating area is a slightly peculiarly dark corner you notice, where a… dragonborn(?) 
         has small piles of dust scattered around the table, looking smugly at the person across. 
         He taps his lanterns onto the pile closest to the man, sparkling with bright colors. 
-        The man falls out of his chair, as the man bellows a hearty laugh
+        The man falls out of his chair, as the other bellows a hearty laugh
         """)
+        golden_ram = golden_ram+1
+        while True:
+            if dnd_class == "Kinsuna" or dnd_class == "Erza":
+                continue
+            if dnd_class == "Xuri" or dnd_class == "Xuri Volk" or dnd_class == "Pollux" or dnd_class == "Erza":
+                tdd1 = input("Would you like to talk to the Dragonborn or the Bard? ")
+                tdd1 = tdd1.title()
+                kdo1 = 0
+                if tdd1 == "The Dragonborn" or tdd1 == "Dragonborn":
+                    print("The angry man begins to storm away, as the gold dragonborn leans back in their chair")
+                    print(f"""
+{dnd_class}:
+> Hello!
+> What are you doing?
+> What's your name?
+> That guy seems mad
+> Leave                      """)
+                    if kdo1 == 1:
+                        print("""
+> I'm doing fine                        """)
+                    kd1 = input("")
+                    kd1 = kd1.title()
+                    if kd1 == "Hello!" or kd1 == "Hello":
+                        print("Hey there, how are you?")
+                        kdo1 = 1
+                    if kd1 == "What are you doing?" or kd1 == "What are you doing":
+                        print("Ha, telling fortunes, would you like yours read? ")
+                        kdof = input("")
+                        
+                        
+                if tdd1 == "Yes"
+                    tdd1 == input("The Dragonborn or the Bard? ")
+                if tdd1 == "The Bard" or tdd1 == "Bard":
+                    pass
