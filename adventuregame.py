@@ -207,36 +207,40 @@ various adventures.
         The man falls out of his chair, as the other bellows a hearty laugh
         """)
         golden_ram = golden_ram+1
-        while True:
-            if dnd_class == "Kinsuna" or dnd_class == "Erza":
-                continue
-            if dnd_class == "Xuri" or dnd_class == "Xuri Volk" or dnd_class == "Pollux" or dnd_class == "Erza":
-                tdd1 = input("Would you like to talk to the Dragonborn or the Bard? ")
-                tdd1 = tdd1.title()
-                kdo1 = 0
+        if dnd_class == "Kinsuna" or dnd_class == "Erza":
+            continue
+        if dnd_class == "Xuri" or dnd_class == "Xuri Volk" or dnd_class == "Pollux" or dnd_class == "Erza":
+            tdd1 = input("Would you like to talk to the Dragonborn or the Bard? (Y/N) ")
+            tdd1 = tdd1.title()
+            kdo1 = 0
+            if tdd1 == "Yes":
+                tdd1 = input("The Dragonborn or the Bard? ")
                 if tdd1 == "The Dragonborn" or tdd1 == "Dragonborn":
                     print("The angry man begins to storm away, as the gold dragonborn leans back in their chair")
-                    print(f"""
+                    while True:
+                        print(f"""
 {dnd_class}:
 > Hello!
 > What are you doing?
 > What's your name?
 > That guy seems mad
 > Leave                      """)
-                    if kdo1 == 1:
-                        print("""
-> I'm doing fine                        """)
-                    kd1 = input("")
-                    kd1 = kd1.title()
-                    if kd1 == "Hello!" or kd1 == "Hello":
-                        print("Hey there, how are you?")
-                        kdo1 = 1
-                    if kd1 == "What are you doing?" or kd1 == "What are you doing":
-                        print("Ha, telling fortunes, would you like yours read? ")
-                        kdof = input("")
+                        kd1 = input("")
+                        if kd1 == "Hello!" or kd1 == "Hello":
+                            print("Kinsuna: Hey there")
+                            kdo1 = 1
+                            continue
+                        if kd1 == "What are you doing?" or kd1 == "What are you doing":
+                            print("Kinsuna: Ha, telling fortunes, would you like yours read? (Y/N) ")
+                            kdof = input("")
+                            if kdof ==  "Yes":
+                                print("""
+Kinsuna takes out another pile of dust. They get close and let out a small spark of fire.
+The smoke twists and turns into a five pointed star, then dissapates.
+Kinsuna: Looks like we might have a bit of turbulence on this boat... huh.
+                                """)
+                                continue
+
                         
-                        
-                if tdd1 == "Yes"
-                    tdd1 == input("The Dragonborn or the Bard? ")
-                if tdd1 == "The Bard" or tdd1 == "Bard":
-                    pass
+                #if tdd1 == "The Bard" or tdd1 == "Bard":
+                    #pass
