@@ -220,7 +220,7 @@ various adventures.
                 kdo1 = 0 # meant to be hidden variable to open up new dialogue interactions
                 if tdd1 == "Yes":
                     tdd1 = input("The Dragonborn or the Bard? ")
-                    if tdd1 == "The Dragonborn" or tdd1 == "Dragonborn":
+                    if tdd1 == "The Dragonborn" or tdd1 == "Dragonborn" or md1s == "Yes":
                         print("The angry man begins to storm away, as the gold dragonborn leans back in their chair")
                         while True:
                             print(f"""
@@ -266,10 +266,29 @@ Kinsuna: I'm doing alright, least we're close to ending this trip,
                                 md1s = input("")
                                 break
 # I am so glad that mess of a dialogue is done, they either can leave, or talk to Erza
-
-
-                        
                 if tdd1 == "The Bard" or tdd1 == "Bard" or md1s == "Yes":
-                    print("yippee")
+                    print("The bard begins to leave the stage, and you approach them.")
+                    while True:
+                        print(f"""
+    {dnd_class}:
+    > What's your name?
+    > Loved the song!
+    > How are you?
+    > Leave
+    """)
+                        ed1 = input("")
+                        if ed1 == "What's your name?":
+                            print("Erza: Erza, Nice to meet ya")
+                            continue
+                        if ed1 == "Loved the Song!":
+                            print("Erza: Thanks! I appreciate it")
+                            continue
+                        if ed1 == "How are you?":
+                            print("Erza: Bit winded, but just need to have a sit down")
+                            continue
+                        if ed1 == "Leave":
+                            print("Before you go, would you like to talk to the Dragonborn? (Y/N)")
+                            md1s = input("")
+                            break
                 if tdd1 == "No":
                     break
