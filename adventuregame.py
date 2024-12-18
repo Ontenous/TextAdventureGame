@@ -233,35 +233,36 @@ various adventures.
                             if kdo1 == 1: # check to add to dialogue list, looks cool :D
                                 print("> I'm pretty good, how are you?")
                             kd1 = input("")
-                            if kd1 == "Hello!" or kd1 == "Hello":
+                            kd1 = kd1.lower()
+                            if kd1 == "hello!" or kd1 == "hello":
                                 print("Kinsuna: Hey there, how are you?")
                                 kdo1 = 1
                                 continue
-                            if kd1 == "What are you doing?" or kd1 == "What are you doing":
+                            if kd1 == "what are you doing?" or kd1 == "what are you doing":
                                 print("Kinsuna: Ha, telling fortunes, would you like yours read? (Y/N) ")
                                 kdof = input("")
-                                if kdof ==  "Yes":
+                                if kdof ==  "Yes" or kdof == "yes":
                                     print("""
 Kinsuna takes out another pile of dust. They get close and let out a small spark of fire.
 The smoke twists and turns into a five pointed star, then dissapates.
 Kinsuna: Looks like we might have a bit of turbulence on this boat... huh.
                                 """)
                                     continue
-                                if kdof == "No":
+                                if kdof == "No" or kdof == "no":
                                     continue
-                            if kd1 == "What's your name?":
+                            if kd1 == "what's your name?" or kd1 == "whats your name" or kd1 == "what's your name" or kd1 == "whats your name?":
                                 print("Kinsuna: My name's Kinsuna, nice to meet you")
                                 continue
-                            if kd1 == "That guy seems mad":
+                            if kd1 == "that guy seems mad":
                                 print("""
 Kinsuna:Wasn't a big fan of his fortune, kinda uptight. Was pretty funny 
         though to seem him fall back and storm off like that.""")
                                 continue
-                            if kd1 == "I'm pretty good, how are you?":
+                            if kd1 == "i'm pretty good, how are you?" or kd1 == "im pretty good, how are you" or kd1 == "i'm pretty good how are you" or kd1 == "im pretty good how are you?":
                                 print("""
 Kinsuna: I'm doing alright, least we're close to ending this trip,
          I have been on here for WAY too long.""")
-                            if kd1 == "Leave":
+                            if kd1 == "leave":
                                 print("Before you go, would you like to talk to the bard? (Y/N)")
                                 md1s = input("")
                                 break
@@ -277,16 +278,17 @@ Kinsuna: I'm doing alright, least we're close to ending this trip,
     > Leave
     """)
                         ed1 = input("")
-                        if ed1 == "What's your name?":
+                        ed1 = ed1.lower()
+                        if ed1 == "what's your name?" or ed1 == "whats your name" or ed1 == "whats your name?":
                             print("Erza: Erza, Nice to meet ya")
                             continue
-                        if ed1 == "Loved the Song!":
+                        if ed1 == "loved the song!" or ed1 == "loved the song":
                             print("Erza: Thanks! I appreciate it")
                             continue
-                        if ed1 == "How are you?":
+                        if ed1 == "how are you?" or ed1 == "how are you":
                             print("Erza: Bit winded, but just need to have a sit down")
                             continue
-                        if ed1 == "Leave":
+                        if ed1 == "leave":
                             print("Before you go, would you like to talk to the Dragonborn? (Y/N)")
                             md1s = input("")
                             break
