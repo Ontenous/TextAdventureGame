@@ -294,3 +294,90 @@ Kinsuna: I'm doing alright, least we're close to ending this trip,
                             break
                 if tdd1 == "No":
                     break
+    if op_loc == "Above Deck": # i'm tired, boss
+        print("Overtop the ship lies a sea, The Sea Dragon's scales peak over the horizon.")
+        golden_ram = golden_ram + 1
+    if golden_ram == 4:
+        print("""
+The constant lapping of the waves is suddenly broken. For a moment it fades, 
+but a roar of water echoes through the sea, droplets splash 50 feet up and 
+rain back down. Gazing across the starboard side, a large ship rocks back 
+and forth from breaching the surface. You instantly recognize it as the Golden Ram. 
+And before you know it, the ringing of a fired cannonball heads right towards the ship.
+The ship screams, the wood breaking like a bone splintering. The crew rushes around, 
+panicked and unknowing what to do against the hulking ship.
+        """)
+        break
+print()
+# Desert Time!
+print(f"""
+As you hit the water, you vision goes black. What feels like a dream, you stare up at a blue sky. 
+An outline of a wide brimmed hat blots out the sun, as he kneels down besides you. 
+You see his charred face get close, inspect you, and then grab your hand and pull you up. 
+As you stand, you look towards where the man should be, but he’s gone. {dnd_class}. You 
+gaze around the desert sands, water barely in sight, 4 other figures remain on the ground. 
+One by one they awake, getting up from the ground, but then seeming to snap into consciousness 
+and quickly look around for… something.
+The blazing hot desert sun scorches the sand underneath your feet, the burning feeling
+radiating through your boots. You don’t know where you are, how you got here, or where to go. 
+The only sign of life seemingly is off in the distance, a forest peeking out over the horizon, 
+as well as the mountain mildly obscured by sand blowing across the wind.
+""")
+
+fake_choice = input("Would you like to go to the forest? You would die if you don't: ")
+if fake_choice == "No" or fake_choice == "no":
+    print("""
+DM - 'Really? You are really going to go for the ONE option to die? I thought it"
+     would be interesting to let you choose, but I am not gonna game over you yet. Let's just...
+     *pretend* that didn't happen.""")
+if fake_choice == "Yes" or fake_choice == "yes":
+    print("You begin to trek towards the distant forest, your only source of hope.")
+
+print(f"""
+The once burning desert day begins to fade, the sun setting over the watery horizon. 
+Your boots finally land on the first patch of grass since the last few weeks, 
+mists from the nearby river cleanses your sweat, and you begin to set up camp.
+
+Within your makeshift shelter you slowly awake, the pitch black night and mosquitoes still there. 
+Wind rustles through the grass, and water continues to roll into the ocean nearby. 
+Leaves crunch and breath is sucked in through sharpened teeth. 
+They wait around, and then with a snort begin to walk away.
+
+After that slight disturbance, the other 6 day's of travel go fairly smoothly. You awake, and continue
+on through the pine forests of New Holman.
+""")
+# seperate line for clarity, they have now arrived in Cobrock
+print(f"""
+After 6 days of travel, you stumble into a decently sized city. 
+Calves and feet aching, as well as sore muscles make you wish to find shelter for 
+at least tonight, in a nice cozy hotel with a drink. You look out towards the cityscape, 
+bandaged small homes stand resilient to the past, posters displayed talking about 
+anti-colonization spirit are skewn about, and people of various races, whether its 
+tabaxi, tortles, lizardfolk, many walk around the town, some carrying their daily 
+groceries to their homes for dinner.
+
+You FINALLY rest upon a comfortable bed, its pillowy cradle unweaving the knots in your muscle,
+and you sleep calmly.
+""")
+
+print(f"""
+Waking up and being safe is a feeling you do not take for granted, as you stretch with daylight shining 
+through the linen curtains. Your situation for now begins to dawn on you, as you are in an 
+unfamiliar country, stranded, almost the farthest from your goals as you could be. Determined 
+to continue on though, you can persevere to survive. But to survive, you’ll need money, 
+and fast to replace your quickly diminishing stash. Your weapons, clothes, rations, and 
+more aren’t in great condition either. But its time to face the day, and this is no time to fall to despair.
+""")
+
+gold = 0
+
+if dnd_class == "Kinsuna":
+    print("""
+Thankfully, as a fortune teller, you have always had a relatively stable income, and so
+while your party goes out to search for adventure, you decide to read a few fortunes for a 
+small portion of gold. 
+""")
+    gold = gold + 2
+    print(f"You now have {gold} gold")
+
+
