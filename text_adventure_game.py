@@ -392,6 +392,8 @@ many of the objects and pieces
 """)
 
 roll = input("Enter Roll to roll a relgion check, to see if you identify this.")
+if roll == "roll":
+    roll = random.randint(1,20)
 if roll >= 17:
     print("""
 You recognize the symbol of Trithereon, the god of the proletariat. 
