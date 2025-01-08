@@ -1,4 +1,5 @@
-#Ascii art for title screen
+import random
+Ascii art for title screen
 print(f"""
        __             _,-"~^"-. 
      _// )      _,-"~`         `. 
@@ -382,4 +383,18 @@ small portion of gold.
     gold = gold + 2
     print(f"You now have {gold} gold")
 
+print("""
+Asking around, many of the people point you towards a singular place.
+You head to a grand building, and open up it’s gigantic wooden double doors. 
+Inside, hanging chandeliers illuminate the cozy interior. Glancing 
+across the walls, you see an ornately smithed symbol decorating 
+many of the objects and pieces
+""")
+
+roll = input("Enter Roll to roll a relgion check, to see if you identify this.")
+if roll >= 17:
+    print("""
+You recognize the symbol of Trithereon, the god of the proletariat. 
+Often worshiped by revolutionaries, though not common in Quenya
+""")
 
