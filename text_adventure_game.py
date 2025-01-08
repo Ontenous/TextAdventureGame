@@ -297,6 +297,7 @@ Kinsuna: I'm doing alright, least we're close to ending this trip,
     if op_loc == "Above Deck": # i'm tired, boss
         print("Overtop the ship lies a sea, The Sea Dragon's scales peak over the horizon.")
         golden_ram = golden_ram + 1
+# Counter checking to see if they have spent enough time, so that the ship arrives
     if golden_ram == 4:
         print("""
 The constant lapping of the waves is suddenly broken. For a moment it fades, 
@@ -323,13 +324,13 @@ radiating through your boots. You don’t know where you are, how you got here, 
 The only sign of life seemingly is off in the distance, a forest peeking out over the horizon, 
 as well as the mountain mildly obscured by sand blowing across the wind.
 """)
-
+# Fun gimmick to show it's dnd, not super impactful so I named it Fake Choice
 fake_choice = input("Would you like to go to the forest? You would die if you don't: ")
 if fake_choice == "No" or fake_choice == "no":
     print("""
-DM - 'Really? You are really going to go for the ONE option to die? I thought it"
+DM - 'Really? You are really going to go for the ONE option to die? I thought it
      would be interesting to let you choose, but I am not gonna game over you yet. Let's just...
-     *pretend* that didn't happen.""")
+     *pretend* that didn't happen.'""")
 if fake_choice == "Yes" or fake_choice == "yes":
     print("You begin to trek towards the distant forest, your only source of hope.")
 
@@ -368,9 +369,10 @@ to continue on though, you can persevere to survive. But to survive, you’ll ne
 and fast to replace your quickly diminishing stash. Your weapons, clothes, rations, and 
 more aren’t in great condition either. But its time to face the day, and this is no time to fall to despair.
 """)
-
+# I don't know why necessarily I added this, but they could buy something? doesn't have
+# the same impact as playing dnd truly, anyways
 gold = 0
-
+# this is a real thing I forgot about when I was playing the session, this is an homage to that
 if dnd_class == "Kinsuna":
     print("""
 Thankfully, as a fortune teller, you have always had a relatively stable income, and so
