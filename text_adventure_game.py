@@ -1,6 +1,21 @@
+"""
+Name: William Nathan
+Date: 1/10/24
+Description: text adventure game based off of a dnd session
+"""
 import random
-Ascii art for title screen
-print(f"""
+import time
+
+# List of functions behind the scenes
+def roll():
+    roll = random.randrange(1,21)
+    print(f"You rolled a {roll}")
+    return roll
+
+
+
+# Ascii art for title screen
+print(r"""
        __             _,-"~^"-. 
      _// )      _,-"~`         `. 
    ." ( /`"-,-"`                 ; 
@@ -13,6 +28,10 @@ print(f"""
    jgs ((("`             (((---~"`         // 
                                           ((________________  
 """)
+for i in range(1,3):
+    print("")
+    time.sleep(0.5)
+
 # Pre-Game Choices
 print(f"""
           Before we begin your adventure, there is a few things you should know. 
@@ -96,9 +115,10 @@ may see more of the world, hear and tell more stories, and make
 some new friends. 
               """)
 
-print()
-print()
-print()
+for i in range(1,4):
+    print("")
+    time.sleep(0.8)
+
 #Dictionary for Opening dialogue
 opening_dialogue = {
     "Kinsuna":"""
@@ -310,7 +330,9 @@ The ship screams, the wood breaking like a bone splintering. The crew rushes aro
 panicked and unknowing what to do against the hulking ship.
         """)
         break
-print()
+
+time.sleep(27)
+
 # Desert Time!
 print(f"""
 As you hit the water, you vision goes black. What feels like a dream, you stare up at a blue sky. 
@@ -348,6 +370,8 @@ They wait around, and then with a snort begin to walk away.
 After that slight disturbance, the other 6 day's of travel go fairly smoothly. You awake, and continue
 on through the pine forests of New Holman.
 """)
+time.sleep(18)
+
 # seperate line for clarity, they have now arrived in Cobrock
 print(f"""
 After 6 days of travel, you stumble into a decently sized city. 
@@ -361,7 +385,10 @@ groceries to their homes for dinner.
 You FINALLY rest upon a comfortable bed, its pillowy cradle unweaving the knots in your muscle,
 and you sleep calmly.
 """)
-
+time.sleep(20)
+for i in range(1,4):
+    print("")
+    time.sleep(0.7)
 print(f"""
 Waking up and being safe is a feeling you do not take for granted, as you stretch with daylight shining 
 through the linen curtains. Your situation for now begins to dawn on you, as you are in an 
@@ -391,12 +418,14 @@ across the walls, you see an ornately smithed symbol decorating
 many of the objects and pieces
 """)
 
-roll = input("Enter Roll to roll a relgion check, to see if you identify this.")
-if roll == "roll":
-    roll = random.randint(1,20)
-if roll >= 17:
-    print("""
-You recognize the symbol of Trithereon, the god of the proletariat. 
-Often worshiped by revolutionaries, though not common in Quenya
-""")
-
+rolling = input("Enter Roll to roll a relgion check, to see if you identify the symbol: ")
+if rolling == "roll" or rolling == "Roll":
+    rolled = roll()
+    if rolled >= 17:
+        print("Success!")
+        print("""
+    You recognize the symbol of Trithereon, the god of the proletariat. 
+    Often worshiped by revolutionaries, though not common in Quenya
+    """)
+    else:
+        print("Failure...")
