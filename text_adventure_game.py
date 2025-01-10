@@ -234,7 +234,7 @@ various adventures.
         golden_ram = golden_ram+1 # ooh it's approaching!
         if dnd_class == "Kinsuna" or dnd_class == "Erza": # Can't talk to self or each other :/
             continue
-        if dnd_class == "Xuri" or dnd_class == "Xuri Volk" or dnd_class == "Pollux" or dnd_class == "Erza":
+        if dnd_class == "Xuri" or dnd_class == "Xuri Volk" or dnd_class == "Pollux" or dnd_class == "Erza" or dnd_class == "Mirajane":
             while True:
                 tdd1 = input("Would you like to talk to the Dragonborn or the Bard? (Y/N) ")
                 tdd1 = tdd1.title()
